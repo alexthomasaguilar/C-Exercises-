@@ -14,7 +14,7 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    cout << "Hello MavDu";
+    cout << "Alex Aguilar";
     return 0;
 }
 
