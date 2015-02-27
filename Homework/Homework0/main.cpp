@@ -13,8 +13,11 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-
-    cout << "I like to eat enchiladas!";
+    
+    string text = "My name is Alex Aguilar";
+    cout << text << endl; 
+    cout << "and I like to eat enchiladas!";
+    
     return 0;
 }
 
