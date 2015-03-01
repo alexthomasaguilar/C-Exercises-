@@ -13,19 +13,22 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-
-    // problem 2 
-    int a = 155; 
-    int b = 168; 
-    int x = a; 
     
-    cout << "a: " << a << " " << "b: " << b << endl; 
+      
+   
+      // problem 3
     
-    x = a; 
-    a = b; 
-    b = x; 
+      double userInput; 
+     
+      cout << "Please enter an amount of meters you will" << endl 
+           << "like to convert to miles, feet, and inches." << endl; 
     
-    cout << "a: " << a << " " << "b: " << b << endl; 
+    cin >> userInput;
+  
+    cout << "Miles: " << userInput / 1609.344 << " miles." << endl; 
+    cout << "Feet: " << userInput * 3.281 << " feet" << endl; 
+    cout << "Inches: " << userInput * 39.372 << " inches";
+    
     return 0;
 }
 
