@@ -14,16 +14,25 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-      // problem 4 
+    // problem 5
     
-    double x; 
+    double x,y,z; 
     
-    cout << "Enter a number to be added by 5" << endl; 
+    cout << "Find the average of three test scores." << endl;
     
-    cin >> x; 
+    cout << "Enter your test scores: ";
+    cin >> x >> y >> z;  
     
-    cout << "Answer: " << x + 5; 
+    cout << "Your Average is: " << (x+y+z)/3;
+    
+    
+   
+    
+    
+    
+        
     
     return 0;
+    
 }
 
