@@ -1,8 +1,12 @@
 /* 
- * File:   main.cpp
- * Author: alexaguilar
- *
- * Created on March 1, 2015, 12:04 AM
+* File:   main.cpp
+* Name:Alex Aguilar 
+* Student ID: 25704
+* Date: March 1, 2015
+* HW: 1
+* Problem: 5
+* I certify this is my own work and code
+* Created on March 1, 2015, 12:04 AM
  */
 
 #include <cstdlib>
