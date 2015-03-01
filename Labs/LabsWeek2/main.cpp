@@ -14,20 +14,15 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-      
-   
-      // problem 3
+      // problem 4 
     
-      double userInput; 
-     
-      cout << "Please enter an amount of meters you will" << endl 
-           << "like to convert to miles, feet, and inches." << endl; 
+    double x; 
     
-    cin >> userInput;
-  
-    cout << "Miles: " << userInput / 1609.344 << " miles." << endl; 
-    cout << "Feet: " << userInput * 3.281 << " feet" << endl; 
-    cout << "Inches: " << userInput * 39.372 << " inches";
+    cout << "Enter a number to be added by 5" << endl; 
+    
+    cin >> x; 
+    
+    cout << "Answer: " << x + 5; 
     
     return 0;
 }
