@@ -18,16 +18,23 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    // problem 5 
+    // problem 7
     
-    int x,y; 
+    cout << "*********************************" << endl; //30 stars
+    cout << "";
+    cout << "        CCCC        SSSSS      !!" << endl; 
+    cout << "      CC           SS    SS    !!" << endl; 
+    cout << "     CC           SS           !!" << endl;
+    cout << "    CCC            SS          !!" << endl; 
+    cout << "    CCC             SSSSS      !!" << endl; 
+    cout << "    CCC                 SS     !!" << endl; 
+    cout << "     CC                  SS    !!" << endl;
+    cout << "      CC                SS     !!" << endl;
+    cout << "        CCCC      SSSSSSS      !!" << endl;
     
-    cout << "Enter two numbers to be added" << endl;
-    cout << "and multiplied to one another:";
-    cin >> x >> y; 
+    cout << "*********************************" << endl; 
     
-    cout << "Sum: " << x+y << endl;
-    cout << "Product: " << x*y;
+    cout << " COMPUTER SCIENCE IS COOL STUFF!";
     
     return 0;
 }
