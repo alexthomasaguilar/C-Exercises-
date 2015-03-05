@@ -20,11 +20,11 @@ int main(int argc, char** argv) {
     int x, y;
     cin >> x >> y; 
     
-    cout << "X = " << x << " Y = " << y << endl;
+    cout << "X = " << x << " " << "Y = " << y << endl;
    
-    cout << setw(80) << setfill('-');
-            
-    cout << "X = " << y << " Y = " << x << endl; 
+    cout << setw(80) << setfill('-') << "" << endl;
+
+    cout << "X = " << y << " " << "Y = " << x << endl; 
             
     return 0;
 }
