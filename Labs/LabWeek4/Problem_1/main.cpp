@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
- * Author: rcc
+ * Author: alexaguilar
  *
- * Created on March 10, 2015, 11:54 AM
+ * Created on March 10, 2015, 2:08 PM
  */
 
 #include <cstdlib>
@@ -12,7 +12,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-    // prompt the user 
+     // prompt the user 
     cout << "Please enter a test result from 1 to 100: ";
     
     int testResult; 
@@ -41,11 +41,7 @@ int main(int argc, char** argv) {
     {
        cout << "You got a F. Shaking my head boi.";
     }
-   
-   
-   
     
-   
     return 0;
 }
 
