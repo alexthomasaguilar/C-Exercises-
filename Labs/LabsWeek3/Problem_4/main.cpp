@@ -21,6 +21,14 @@ int main(int argc, char** argv) {
         y = 4;
     }
     else if (x == 9)
+    { 
+        y = 5;
+    }
+    else 
+    { 
+        y = 6; 
+    }
+    
     return 0;
 }
 
