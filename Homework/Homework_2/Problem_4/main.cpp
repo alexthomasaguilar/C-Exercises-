@@ -44,8 +44,7 @@ int main(int argc, char** argv) {
     
     cout << " " << endl; 
     
-    cout << "I am sorry that I am unable to turn in my "
-         << "homework at this time. "
+    cout << "I am sorry that I am unable to turn in my homework at this time. "
          << " First, I ate a rotten " << food << ", which made me turn "
          << color << " and extremely ill. I came down with a fever of " 
          << number << ". Next, my " << adjective << " pet " << animal 

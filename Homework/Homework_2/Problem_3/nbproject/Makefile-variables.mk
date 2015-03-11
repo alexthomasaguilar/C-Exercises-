@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=homework_0
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/homework_0
+CND_ARTIFACT_NAME_Debug=problem_3
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/problem_3
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=homework0.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/homework0.tar
+CND_PACKAGE_NAME_Debug=problem3.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/problem3.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=homework_0
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/homework_0
+CND_ARTIFACT_NAME_Release=problem_3
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/problem_3
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=homework0.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/homework0.tar
+CND_PACKAGE_NAME_Release=problem3.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/problem3.tar
 #
 # include compiler specific variables
 #
