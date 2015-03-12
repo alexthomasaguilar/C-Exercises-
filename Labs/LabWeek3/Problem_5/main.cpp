@@ -13,32 +13,53 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-    double cash,change;
- 
+   
+    cout << "Please enter how much you owe: ";
     
-    cout << "Your meal will come out to $7.50.\n" 
-         << "Please enter your cash: ";
+    double owed;
+    cin >> owed;
     
-    cin >> cash; 
+    cout << "Please enter what you paid: ";
     
-    if (cash == 7.50)
-    {
-        cout << "Payment method confirmed.\n"
-             << "Have a good day.";
-    }
-    else if (cash > 10)
-    {
-        cout << "Sorry but we do not have change.\n"
-             << "There is an atm machine around the corner.";
+    double paid;
+    cin >> paid;
     
-    }
+    // Calculate the change
+    double change = paid - owed;
     
-    else if (cash <= 10)
-    {
-        cout << "Thank you. Your change will be: "
-             << float change = static_cast<float>cash - 7.50;
+    // Convert change to pennies
+    // Add an offset to avoid round off error
+    int changeInt = (change + .0005) * 100;
+    
+    int dollars = changeInt / 100;
+    // Get remaining change
+    changeInt %= 100; // changeInt = changeInt % 100
+    
+    // Quarters
+    int quarters = changeInt / 25;
+    changeInt %= 25;
+    
+    // Dimes
+    int dimes = changeInt / 10;
+    changeInt %= 10;
+    
+    // nickels
+    int nickels = changeInt / 5;
+    changeInt %= 5;
+    
+    // Pennies
+    int pennies = changeInt / 1;
+    changeInt %= 1;
+    
+    // Output amounts
+    cout << "Dollars: " << dollars << endl;
+    cout << "Quarters: " << quarters << endl;
+    cout << "Dimes: " << dimes << endl;
+    cout << "Nickels: " << nickels << endl;
+    cout << "Pennies: " << pennies << endl;
+    
         
-    }
+    
     
     
     return 0;
