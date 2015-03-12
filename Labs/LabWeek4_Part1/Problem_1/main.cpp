@@ -11,8 +11,8 @@ using namespace std;
 
 
 int main(int argc, char** argv) {
-
-     // prompt the user 
+   
+    // prompt the user 
     cout << "Please enter a test result from 1 to 100: ";
     
     int testResult; 
