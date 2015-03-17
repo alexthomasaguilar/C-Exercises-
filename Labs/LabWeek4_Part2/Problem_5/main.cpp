@@ -14,9 +14,15 @@ int main(int argc, char** argv) {
 
     cout << "Guessing Game!\n"  
          << "You have 10 tries to guess my number\n" 
-         << "that is within 1 an 100, unless it is game over." << endl; 
+         << "that is within 1 an 100, unless, it is game over." << endl; 
    
-    int userGuess; 
+   
+   
+            
+    return 0;
+}
+
+ /* int userGuess; 
     
     int guessNum = 45;
     
@@ -42,9 +48,4 @@ int main(int argc, char** argv) {
         cout << "Congratulations. You guessed correctly.\n";
     }
    
-    } 
-   
-            
-    return 0;
-}
-
+    } */

@@ -15,21 +15,36 @@ int main(int argc, char** argv) {
     
     cout << "Find out if a year is a leap year.\n" 
          << "Input a year: ";
+    int userYear; 
+    cin >> userYear; 
     
-    int userInput;
-    cin >> userInput; 
-    
-    if ((userInput %4 == 0) && (userInput %100 != 0) || (userInput %400 == 0))
+    if (userYear)
     {
-        cout << "This is a leap year.";
-    }
+        if (userYear %400 == 0)
+        {
+            cout << userYear << " is a leap year.\n";
+        }
+                
+        else if (userYear %100 == 0)
+        {
+            cout << userYear << " is not a leap year\n";
+        }
+        else if (userYear %4 == 0)
+        {
+            cout << userYear << " is a leap year.\n";
+        }
+        else 
+        {
+            cout << userYear << " is not a leap year.\n";
+        }
+        
+     }
     else 
-    {
-        cout << "This is not a leap year.";
+    { 
+        cout << "You entered an incorrect year.\n";
     }
-    
-    
-    
+
+ 
     
     return 0;
 }

@@ -23,6 +23,9 @@ int main(int argc, char** argv) {
     
    /* b) */
       
+    cout << "This program will figure out the letter \n"
+         << "grade to your test result. \n";
+    
     int testResult = 1; 
     
     while(testResult >= 1 && testResult <= 100)
