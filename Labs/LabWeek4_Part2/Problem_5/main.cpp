@@ -27,9 +27,10 @@ int main(int argc, char** argv) {
     cin >> userGuess;
     
     
-    if (guessNum == userGuess)
+    if (guessNum > userGuess)
     {
-        cout << "Congratulations. You guessed correctly.\n";
+        cout << "Your guess is bigger than the initial number. "
+             << "Guess again." << endl;
     }
     else if (userGuess < guessNum)
     {
@@ -38,8 +39,7 @@ int main(int argc, char** argv) {
     }
     else
     {
-        cout << "Your guess is bigger than the initial number. "
-             << "Guess again." << endl;
+        cout << "Congratulations. You guessed correctly.\n";
     }
    
     } 
