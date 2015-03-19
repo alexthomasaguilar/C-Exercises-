@@ -21,30 +21,30 @@ int main(int argc, char** argv) {
 
     if (grade.substr(0, 1) == "A") 
     {
-        if (grade.substr(0, 2) == "A+") {
+        if (grade.substr(1) == "+") {
         cout << "Your grade is 4.0";
         }
-        else if (grade.substr(0, 2) == "A") {
-        cout << "Your grade is 4.0";
+        else if (grade.substr(1) == "-") {
+        cout << "Your grade is 3.7";
         }
         else {
        
-            cout << "Your grade is 3.7"; 
+            cout << "Your grade is 4.0"; 
         }
     }
      
      
-    if (grade.substr(0, 1) == "B") 
+    else if (grade.substr(0, 1) == "B") 
     {
-        if (grade.substr(0, 2) == "B+") {
+        if (grade.substr(1) == "+") {
         cout << "Your grade is 3.3";
         }
-        else if (grade.substr(0, 2) == "B") {
-        cout << "Your grade is 3.0";
+        else if (grade.substr(1) == "-") {
+        cout << "Your grade is 2.7";
         }
         else {
        
-            cout << "Your grade is 2.7"; 
+            cout << "Your grade is 3.0"; 
         }
     }
    

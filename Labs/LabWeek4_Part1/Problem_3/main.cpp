@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 
         cout << "Please enter a value: ";
         cin >> userValue;
-        cout << "(" << x << ") Your value is: " << userValue << endl;
+        cout << "(" << x+1 << ") Your value is: " << userValue << endl;
     }
 
 

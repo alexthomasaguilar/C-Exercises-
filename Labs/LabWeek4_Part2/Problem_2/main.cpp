@@ -26,9 +26,9 @@ int main(int argc, char** argv) {
     
     while (initialGuess * .99 >= guess)
     {
-        result = numb / guess; 
+        double result = numb / guess; 
         initialGuess = guess; 
-        guess = (guess + result)/2; 
+        guess = (initialGuess + result)/2; 
         i++;
     }
     
