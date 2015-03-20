@@ -15,10 +15,14 @@ int main(int argc, char** argv) {
     string tele;
     
     cout << "Please enter a telephone number with "
-         << "only one dash '-' in between: \n"; 
+         << "only one dash ( - ) : \n"; 
     cin >> tele;
+   
     
-    cout << ; // skipped this problem
+    int location = tele.find('-');
+    
+    cout << "Your Phone Number is: " 
+         <<   tele.substr(0,location) << tele.substr(location + 1);
     
     return 0;
 }

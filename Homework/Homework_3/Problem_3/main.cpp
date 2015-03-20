@@ -12,26 +12,33 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-    int maxCap = 50;
-    int pepAtt = 67;
+    
+    cout << "Please enter the max capacity for the meeting room: ";
+    int maxCap;
+    cin >> maxCap;
+    
+    cout << "Please enter the number of people attending the meeting: ";
+    int pepAtt;
+    cin >> pepAtt;
+    
     int diff1 = maxCap - pepAtt;
     int diff2 = pepAtt - maxCap;
     
-    cout << "Fire Law Regulation Program.\n";
-    cout << " \n";
-    cout << "Meeting room max capacity is " << maxCap << endl;
-   
-    
     if (pepAtt <= maxCap)
-    {
+       {
         cout << "It is legal to hold the meeting.\n"
-             << "There are " << diff1 << " spots available.";
-    }
-    else {
-        cout << "The meeting cannot be held due to protocol\n"
-             << diff2 << " people(s) must leave for the meeting to "
+             << "The meeting room can accept attendance to " << diff1 
+                << " more individual(s).";
+        }
+    else if (pepAtt > maxCap) {
+        cout << "The meeting cannot be held due to protocol.\n"
+             << diff2 << " individual(s) must leave for the meeting to "
               << "be held.";
-    }
+            }
+    
+    else {
+        cout << "You did not enter a valid number.";
+      }
     return 0;
 }
 
