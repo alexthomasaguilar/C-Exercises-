@@ -66,7 +66,7 @@ int main(int argc, char** argv) {
         }
         
         else {
-            cout << "You entered an invalid number.";
+            cout << "Invalid account balance.";
         }
         
         cout << endl
