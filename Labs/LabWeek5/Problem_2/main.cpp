@@ -12,7 +12,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-    srand(time(0));
+ 
     //prompt the user 
     cout << "There is a total of 23 toothpicks.\n"
          << "You must choose whether to pick up either 1, 2, or 3\n"
@@ -32,10 +32,7 @@ int main(int argc, char** argv) {
     int userInput;
     cin >> userInput;
     
-    // elements for cpu random generator 
-    int min = 1;
-    int max = 3; 
-    int cpuNum = rand() % (max - min + 1) + min;
+   
     
     while(userInput == 1 || userInput == 2 || userInput == 3) {
         if(userInput == 1){
@@ -48,23 +45,26 @@ int main(int argc, char** argv) {
             pickTotal -= userInput;
         }
         
-        // need to incorporate the random generator for computer 
-        if (pickTotal >= 4) {
-            pickTotal -= cpuNum;
-            cout << "CPU chose: " << cpuNum << endl
+        int cpuInput = 4 - userInput; 
+        
+        if (pickTotal > 4) {
+            pickTotal -= cpuInput;
+            cout << "CPU chose: " << cpuInput << endl
                  << "There are " << pickTotal << " toothpicks left.\n";
                     
         }
         
-        // need a new variable for this part of the problem
+        // need to solve part b of 
       
-        if (pickTotal <= 4) { 
-            int finalFour = 1;
-            pickTotal + finalFour - pickTotal;
-            cout << "CPU chose: " << cpuNum << endl
-            << "There are " << pickTotal << " toothpicks left.\n";
-           
-        }
+      /*  if (pickTotal <= 4) { 
+            
+        
+            
+             pickTotal = pickTotal - userInput 
+            cout << "CPU chose: " <<  << endl
+            << "There are " << pickTotal << " toothpicks left.\n"; 
+        } */
+    
         if (pickTotal == 0) {
             cout << "You lost.";
             cout << "Do you want to play again?\n"
@@ -74,6 +74,9 @@ int main(int argc, char** argv) {
         }
         
         if (pickTotal == 1) {
+            cout << "There are " << pickTotal << " toothpicks left.\n" 
+                 << "CPU chose: " << 1 << endl;
+            
             cout << "You won. Congratulations.\n";
               
            cout << "Do you want to play again?\n"
@@ -86,7 +89,10 @@ int main(int argc, char** argv) {
         
     }
     
-    cout << "Invalid number.\n";
+     cout << "Invalid number.\n";
+     cout << "Do you want to play again?\n"
+                << "Enter 'y' for yes or 'n' for no."; 
+     cin >> answer;
    
       // dont know how to go back to the loop if they enter an invalid number 
     }
