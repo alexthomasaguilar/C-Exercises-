@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
   
     if (answer == "y") {
     
-    cout << "Please enter a number: "; 
+    cout << "Pick a stick: "; 
     int userInput;
     cin >> userInput;
     
@@ -45,60 +45,43 @@ int main(int argc, char** argv) {
             pickTotal -= userInput;
         }
         
-        int cpuInput = 4 - userInput; 
+       
+        
         
         if (pickTotal > 4) {
+             int cpuInput = 4 - userInput; 
+            
+             cout << "CPU chose: " << cpuInput << endl;
+           
             pickTotal -= cpuInput;
-            cout << "CPU chose: " << cpuInput << endl
-                 << "There are " << pickTotal << " toothpicks left.\n";
-                    
+            
+            cout << "There are " << pickTotal << " toothpick(s) left.\n";
+            
+                 
         }
-        
-        // need to solve part b of 
-      
-      /*  if (pickTotal <= 4) { 
+        /*else if (pickTotal <= 4 && pickTotal >= 2) {
+           
+            int cpuInput2 = pickTotal - 1;
+            cout << "CPU chose: " << cpuInput2 << endl
+                 << "There is " << pickTotal << " toothpick left.\n";
             
-        
+           
             
-             pickTotal = pickTotal - userInput 
-            cout << "CPU chose: " <<  << endl
-            << "There are " << pickTotal << " toothpicks left.\n"; 
+        }
+        else if (pickTotal == 1) {
+            cout << "There is " << 1 << "toothpick left.";
         } */
-    
-        if (pickTotal == 0) {
-            cout << "You lost.";
-            cout << "Do you want to play again?\n"
-                << "Enter 'y' for yes or 'n' for no."; 
-           cin >> answer;
-          
-        }
+       
         
-        if (pickTotal == 1) {
-            cout << "There are " << pickTotal << " toothpicks left.\n" 
-                 << "CPU chose: " << 1 << endl;
-            
-            cout << "You won. Congratulations.\n";
-              
-           cout << "Do you want to play again?\n"
-                << "Enter 'y' for yes or 'n' for no."; 
-           cin >> answer;
-        }
-        
-        cout << "Please enter another number: ";
-        cin >> userInput;
-        
+       
+     
     }
     
-     cout << "Invalid number.\n";
-     cout << "Do you want to play again?\n"
-                << "Enter 'y' for yes or 'n' for no."; 
-     cin >> answer;
+    cout << "Invalid number.";
    
-      // dont know how to go back to the loop if they enter an invalid number 
     }
+        cout << "Have a good day.";
     
-    cout << "Have a good day.";
-
-    return 0;
+        return 0;
 }
 

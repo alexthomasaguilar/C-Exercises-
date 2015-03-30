@@ -13,8 +13,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-                           // didn't finish 
-    string user1;        // will finish by the end of tomorrow 
+                          
     string user2;
     string response;
    
@@ -37,13 +36,13 @@ int main(int argc, char** argv) {
     int cpu1 = rand() % (max - min + 1) + min;
     int cpu2 = rand() % (max - min + 1) + min; 
     
-    cout << "CPU-1 choice: "; 
-    cin >> cpu1;
+    cout << "CPU-1 choice: " << cpu1 << endl; 
+    
     
     cout << ""; 
     
-    cout << "CPU-2 choice: "; 
-    cin >> cpu2;
+    cout << "CPU-2 choice: " << cpu2 << endl;
+    
     
     if(cpu1 == 1 && cpu2 == 2){
         cout << "Paper covers rock." << endl 
@@ -84,7 +83,7 @@ int main(int argc, char** argv) {
     
     } // end of while loop
     
-    cout << "Heave a nice day.";
+    cout << "Okay. Heave a nice day.";
     
     return 0;
 }
