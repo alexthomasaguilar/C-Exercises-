@@ -20,40 +20,43 @@ int max (int num1, int num2) {
 
 int main(int argc, char** argv) {
 
-    cout << "This program will determine the number that is the largest \n"
-         << "amongst the two numbers you enter.\n";
-    cout << "Will you like to begin? \n" 
-         << "Enter 'y' for yes or 'n' for no. "; 
-    string response;
-    cin >> response; 
-    
-    while (response == "y") {
-    
-        cout << "\nPlease enter two numbers: ";
-    
-        int userInput1, userInput2; 
-        cin >> userInput1; 
-        cin >> userInput2;
+   
+        int num1 = 5, num2 = 1, num3 = 5, num4 = 10, num5 = 199,
+        num6 = 2, num7 = 90, num8 = 10, num9 = 1, num10 = 89;
         
-        int maxValue = max(userInput1, userInput2);
+        int maxValue1 = max(num1, num2);
         
-        cout << "You entered: " << userInput1 << " and " 
-             << userInput2 << endl
-             <<  "The largest number is: " << maxValue; 
+        cout << num1 << " and " << num2 << endl
+         <<  "The largest number is: " << maxValue1 << endl; 
+        cout << " " << endl; 
+     
+        int maxValue2 = max(num3, num4);
         
-        cout << "\nWill you like to run the program again? \n" 
-         << "Enter 'y' for yes or 'n' for no. "; 
-    
-             cin >> response; 
+        cout << num3 << " and " << num4 << endl
+         <<  "The largest number is: " << maxValue2 << endl; 
+        cout << " " << endl; 
         
+        int maxValue3 = max(num5, num6);
+        
+        cout << num5 << " and " << num6 << endl
+         <<  "The largest number is: " << maxValue3 << endl; 
+        cout << " " << endl; 
        
-    
-    } // end of while loop 
-    if (response == "n") {
-        cout << "Okay. Have a nice day.";  
-    }
-  
-    cout << "Invalid entry.";
+        
+        int maxValue4 = max(num7, num8);
+        
+        cout << num7 << " and " << num8 << endl
+         <<  "The largest number is: " << maxValue4 << endl; 
+        cout << " " << endl; 
+        
+        int maxValue5 = max(num9, num10);
+        
+        cout << num9 << " and " << num10 << endl
+         <<  "The largest number is: " << maxValue5 << endl; 
+        cout << " " << endl; 
+       
+        
+ 
     return 0;
 }
 
