@@ -13,7 +13,7 @@ using namespace std;
 int main(int argc, char** argv){
 
     int score, pointsPosbl, numExer; 
-    int sumScore = 0, sumPoints = 0, 
+    int sumScore = 0, sumPoints = 0;
     double average; 
     
     cout << "Calculate the total grade for classroom exercises.";

@@ -2,29 +2,15 @@
  * File:   main.cpp
  * Author: alexaguilar
  *
- * Created on March 29, 2015, 7:29 PM
+ * Created on April 4, 2015, 12:37 PM
  */
 
 #include <cstdlib>
 #include <iostream>
+
 using namespace std;
 
-
-int main(int argc, char** argv) {
-
-    // put together problem 7 and problem 8 into one program 
-    // create some sort of menu 
-   
-    
-    cout << "This program allows you play a game of rock-paper-scissors\n"
-         << "with a cpu, or you can watch two cpus play against"
-         <<  "one another.\n" << "Enter 'Player' to play or enter 'CPU' to "
-         << "watch two cpus play rock-paper-scissors. ";
-    string userInput;
-    cin >> userInput;
-    
-    if (userInput == "Player") { // FIRST GAME 
-        
+void playerRPS () {   // second program 
         string user1;
         string user2;
         string response;
@@ -87,16 +73,12 @@ int main(int argc, char** argv) {
     
     cout << "Heave a nice day.";
     
-    }
+}
+
+void cpuRPS () {   // first program 
     
-    else if (userInput == "CPU") { // CPU GAME 
-         
-         string user2;
-   
          string response;
    
-    
-    
     cout << "2-CPU Rock-Paper-Scissor Game." << endl; 
     cout << "CPUs generate random numbers: \n"
          << "'1' for Rock, '2' for Paper, \n"
@@ -158,14 +140,37 @@ int main(int argc, char** argv) {
     }
     cout << "\nEnter 'yes' to play again or 'no' to quit. ";
     cin >> response;
-    
     } // end of while loop
     
     cout << "Okay. Heave a nice day.";
     
-    }
-        
+}
     
+
+
+
+int main(int argc, char** argv) {
+
+      
+    cout << "This program allows you play a game of rock-paper-scissors\n"
+         << "with a cpu, or you can watch two cpus play against"
+         <<  "one another.\n" << "Enter '1' to play or enter '2' to "
+         << "watch two cpus play rock-paper-scissors. ";
+    int userInput;
+    cin >> userInput;
+    
+    switch (userInput) {
+        case 1: 
+            playerRPS();
+            break;
+        
+        case 2: 
+            cpuRPS ();
+            break;
+            
+        default: 
+            cout << "Invalid entry.";
+    }
     return 0;
 }
 
