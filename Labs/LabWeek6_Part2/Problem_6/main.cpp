@@ -7,17 +7,18 @@
 
 #include <cstdlib>
 #include <iostream>
+
 using namespace std;
 
-string text () {
-   int length = text.size(); 
-    return length;
+int text (string length) {
+    int numChar = length.size();
+    return numChar;
 }
 
 int main(int argc, char** argv) {
 
-    string text = "apples and monkeys";
-    cout << "The string is " << length << " characters.";
+    
+    cout << "The string is " << text("honeybadger") << " characters.";
     return 0;
 }
 

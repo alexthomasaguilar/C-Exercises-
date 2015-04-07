@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
- * Author: rcc
+ * Author: alexaguilar
  *
- * Created on April 2, 2015, 12:27 PM
+ * Created on April 6, 2015, 11:44 PM
  */
 
 #include <cstdlib>
@@ -11,14 +11,13 @@
 #include <iomanip>
 using namespace std;
 
+int text (string length) {
+    int numChar = length.size();
+    return numChar;
+}
 
 int main(int argc, char** argv) {
-    // 2) Write a program that reads strings from a file, (like demonstrated in class), 
-    // and counts how many characters there are in all of the strings. 
-    //The program should indicate the total number of characters.
-    
-  
- 
+
     ofstream outfile;
     outfile.open("test.txt");
     
@@ -32,7 +31,7 @@ int main(int argc, char** argv) {
     // reading from the file we created 
     
     ifstream infile;
-    string text;
+    string input;
     int sumString; 
     infile.open("test.txt");
     
@@ -41,31 +40,31 @@ int main(int argc, char** argv) {
         cout << "File not found.";
     }
     
-    infile  >> text; 
-    cout << "1. " << text.size() << endl;
+    infile  >> input; 
+    cout << "1. " << text(input) << endl;
     
-    sumString+= text.size();
+    sumString+= text(input);
     
-    infile >> text; 
-    cout << "2. "  << text.size() << endl;
+    infile  >> input; 
+    cout << "2. " << text(input) << endl;
     
-    sumString+= text.size();
+    sumString+= text(input);
     
-    infile >> text; 
-    cout << "3. " << text.size() << endl;
+    infile  >> input; 
+    cout << "3. " << text(input) << endl;
     
-    sumString+= text.size();
+    sumString+= text(input);
     
-    infile >> text; 
-    cout << "4. " << text.size() << endl;
+    infile  >> input; 
+    cout << "4. " << text(input) << endl;
     
-    sumString+= text.size();
+    sumString+= text(input);
+    
     
     cout << "Total string length is: " << sumString;
     infile.close();
     
     
-   
     return 0;
 }
 

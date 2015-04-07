@@ -26,58 +26,69 @@ int main(int argc, char** argv) {
     string answer;
     cin >> answer;
   
-    if (answer == "y") {
+    while (answer == "y") {
     
-    cout << "Pick a stick: "; 
+    cout << "Choose the amount of sticks you will like to choose: "; 
     int userInput;
     cin >> userInput;
     
-   
-    
-    while(userInput == 1 || userInput == 2 || userInput == 3) {
-        if(userInput == 1){
-            pickTotal -= userInput;
+    if (userInput > 3 || userInput < 0) {
+            cout << "Invalid number" << endl; 
+            answer = "no";
         }
-        else if (userInput == 2) {
+     
+        
+        if (pickTotal > 4 && userInput <= 3) {
+        
+            cout << "\nYou chose " << userInput << " toothpicks." << endl;
             pickTotal -= userInput;
-        }
-        else {
-            pickTotal -= userInput;
-        }
-        
-       
-        
-        
-        if (pickTotal > 4) {
-             int cpuInput = 4 - userInput; 
+            cout << "There are " << pickTotal << " toothpicks left." << endl;
+            
+            int cpuInput = 4 - userInput; 
             
              cout << "CPU chose: " << cpuInput << endl;
            
             pickTotal -= cpuInput;
             
-            cout << "There are " << pickTotal << " toothpick(s) left.\n";
+            cout << "There are " << pickTotal << " toothpick left.\n";
             
                  
         }
-        /*else if (pickTotal <= 4 && pickTotal >= 2) {
-           
-            int cpuInput2 = pickTotal - 1;
-            cout << "CPU chose: " << cpuInput2 << endl
-                 << "There is " << pickTotal << " toothpick left.\n";
+        
+        else if (pickTotal <=4 && userInput >= 2) {
+            int cpuInput = pickTotal - 1;
             
-           
+            cout << "CPU chose " << cpuInput << " toothpicks." << endl; 
+            pickTotal -= cpuInput;
+            cout << "There are " << pickTotal << " toothpicks left." << endl;
+                  
+        }
+        
+        else if (pickTotal == 1) {
+           int cpuInput = 1; 
+          
+            cout << "CPU chose " << cpuInput << " toothpicks." << endl; 
+            pickTotal -= cpuInput;
+            cout << "There are " << pickTotal << " toothpicks left." << endl;
+            cout << "You won." << endl; 
+            
+            answer = "no";
             
         }
-        else if (pickTotal == 1) {
-            cout << "There is " << 1 << "toothpick left.";
-        } */
-       
         
-       
-     
-    }
+        else if (pickTotal <= 0) {
+            
+            cout << "You lost the game." << endl;
+            answer = "no";
+        }
+        
+        if (answer == "no") {
+            cout << "Enter 'y' to play again or 'n' to exit."; 
+            cin >> answer;
+            pickTotal = 23; 
+        }
     
-    cout << "Invalid number.";
+     
    
     }
         cout << "Have a good day.";

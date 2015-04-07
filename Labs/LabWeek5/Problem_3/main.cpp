@@ -10,6 +10,17 @@
 
 using namespace std;
 
+bool palindrome (string word) {
+    
+    for (int i = 0; i < word.size(); i++) {
+        
+        if (word[i] != word[word.size() - 1-i]) {
+            
+            return false;
+        }
+    }
+    return true;
+}
 
 int main(int argc, char** argv) {
 
@@ -17,17 +28,17 @@ int main(int argc, char** argv) {
     cout << "This program will check to see if you \n"
          << "inputed a correct palindrome.\n";
     cout << "Enter your 'palindrome': ";
-    string palindrome;
-    cin >> palindrome;
+    string word;
+    cin >> word;
     
-    int stringLen = palindrome.size();
+    if (palindrome(word)) {
+        cout << word << " is a palindrome.";
+    }
+    else {
+        cout << word << " is not a palindrome.";
+    }
     
     
-  
- 
-    
-  
-   
     return 0;
 }
 
