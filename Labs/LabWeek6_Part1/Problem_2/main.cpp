@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
     
     ifstream infile;
     string text;
-    int sumString; 
+    int sumString = 0; 
     infile.open("test.txt");
     
    
