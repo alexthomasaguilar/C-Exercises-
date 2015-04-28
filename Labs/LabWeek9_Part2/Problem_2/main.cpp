@@ -13,7 +13,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
-    cout << "Feel free to add numbers into the vector\n"
+    cout << "Feel free to add numbers into the vector.\n"
          << "Enter a -1 to stop.\n"; 
 
         vector <int> numbers; 
