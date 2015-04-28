@@ -10,6 +10,26 @@
 #include <vector>
 using namespace std;
 
+void vectorFx (vector <int> & numbers) 
+{
+    int userInput; 
+    int count = 0; 
+    
+     while (userInput != -1)
+           {
+                cin >> userInput;  
+                numbers.push_back(userInput);
+                ++count;
+                 
+           } 
+    
+    cout << "The vector is: ";
+    
+    for (int i = 0; i < count - 1; i++) 
+    {
+        cout << numbers[i] << " ";
+    }
+}
 
 int main(int argc, char** argv) {
   // need to finish this problem
@@ -17,16 +37,12 @@ int main(int argc, char** argv) {
          << "Enter a -1 to stop.\n"; 
 
         vector <int> numbers; 
-          int userInput; 
           cout << "Enter a number: ";
-           cin >> userInput; 
+           
+          vectorFx(numbers);
    
-         while (userInput != -1)
-           {
-                 numbers.push_back(userInput);
-                 cout << "Enter another number: ";
-                 cin >> userInput;
-           } 
+          
+        
            
     return 0;
 }
